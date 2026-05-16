@@ -15,6 +15,7 @@ import androidx.navigation.compose.rememberNavController
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Entry point for the Compose-based UI
         setContent {
             NammaYantraTheme {
                 MainNavigation()
@@ -40,6 +41,7 @@ fun NammaYantraTheme(content: @Composable () -> Unit) {
 @Composable
 fun MainNavigation() {
     val navController = rememberNavController()
+    // Retrieve the current user session from the Repository
     val session by Repository.userSession
     
     val startDestination = if (session.role == Role.NONE) "role_selection" 
