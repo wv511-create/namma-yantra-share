@@ -7,11 +7,26 @@ A tractor marketplace application for farmers and owners.
 - **Owner Side**: Manage machine inventory, view and respond to booking requests, and track analytics.
 - **Real-time Integration**: Firebase integration for authentication and data storage.
 
-## Project Structure
-- `android/`: Kotlin/Jetpack Compose source code for the Android app.
-- `web-prototype/`: A functional web-based prototype (HTML/CSS/JS).
+## 📂 Project Structure
+```text
+├── android/                   # Android App Source
+│   ├── app/
+│   │   ├── src/main/
+│   │   │   ├── java/          # Kotlin Source (Compose)
+│   │   │   ├── AndroidManifest.xml
+│   │   │   └── res/           # Layout/Theme Resources
+│   │   └── build.gradle       # App Dependencies
+│   └── build.gradle           # Project Config
+├── web-prototype/             # Web Application Prototype
+│   ├── app.js                 # Frontend Logic
+│   ├── index.html             # UI Structure
+│   ├── style.css              # Custom Styling
+│   └── package.json           # Web Build Config
+├── PRD.md                     # Product Requirements Document
+└── README.md                  # Project Documentation
+```
 
-## Firebase Setup
+## 🛠️ Tech Stack
 
 ### Web Prototype
 1. Go to the [Firebase Console](https://console.firebase.google.com/).
