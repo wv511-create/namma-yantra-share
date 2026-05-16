@@ -3,6 +3,7 @@ package com.nammayantrashare.app
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 
+// Core Data Models for the Namma-Yantra Share application
 data class UserSession(
     val name: String = "",
     val phone: String = "",
@@ -40,6 +41,7 @@ data class Booking(
 
 enum class BookingStatus { PENDING, ACCEPTED, DECLINED }
 
+// In-memory data repository (Mocked for Firebase skeleton)
 object Repository {
     val machines = mutableStateListOf(
         Machine("1", "Mahindra 575 DI Tractor", "Ramesh Kumar", "+91 98765 43210", 500.0, 3500.0, true, 4, "2.3km", "Tractor"),
