@@ -45,8 +45,9 @@ object FirebaseHelper {
     suspend fun updateBookingStatus(id: String, status: BookingStatus) {
         try {
             db.collection("bookings").document(id).update("status", status).await()
+            android.util.Log.d("FirebaseHelper", "Status updated successfully")
         } catch (e: Exception) {
-            // Handle error
+            android.util.Log.e("FirebaseHelper", "Error updating status: ${e.message}")
         }
     }
 }
